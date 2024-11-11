@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", cursive;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    background-color: rgb(216, 243, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px
+}
+
+.logo img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    color: rgb(255, 107, 193);
+    margin: 0;
+    text-align: left;
+    text-shadow: 2px 2px 4px;
+}
+.fecha {
+    background-color: antiquewhite;
+    color: rgb(255, 0, 115);
+    text-align: right;
+}
+
+.menu {
+    width: 100%;
+    background-color: rgb(255, 206, 227);
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav {
+    width: 200px;
+    padding: 1px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(216, 243, 255);
+    margin-top: 120px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.contenedor-flex {
+    background-color: rgb(255, 206, 227);
+    border: 2px solid rgb(0, 179, 255);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja {
+    width: 100%;
+    max-width: 300px;
+    background-color: beige;
+    border: 1px solid rgb(255, 0, 115);
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.caja h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caja img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+.caja p {
+    text-align: justify;
+    font-weight: bold;
+}
+.cajagrande {
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid rgb(255, 0, 115);
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.cajagrande h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cajagrande img {
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.cajagrande p {
+    max-width: 90%;
+    text-align: justify;
+    font-weight: bold;
+}
+.avatar { 
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid orange;
+}
+a {
+    color: rgb(255, 0, 115);
+    text-align: start;
+}
+
+aside {
+    background-color: rgb(255, 239, 249);
+    border: 2px solid rgb(255, 0, 115);
+    width: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.asideimg {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 769px) {
+    aside {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+footer {
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
