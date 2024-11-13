@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noti~uwu</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="shortcut icon" href="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="container-logo">
+        <div class="logo">
+          <a href="index.html"><img src="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png"
+              alt="Top Banner"></a>
+        </div>
+        <h1>Noti~uwu</h1>
+      </div>
+      <div id="fecha" class="fecha"></div>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="contenedor-flex">
+      <div class="cajagrande">
+        <h2>
+          <strong>Ajuste de cuentas entre bandas, en Francia, deja cinco heridos y un
+            menor en coma</strong>
+        </h2>
+        <br>
+        <img class="imagen1" src="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Noticia3.jpg"
+          alt="Tres furgonetas policiales, acudieron despúes del tiroteo">
+        <br>
+        <p>
+          Francia le ha declarado la guerra al narcotráfico. El problema es que
+          los narcotraficantes también se la han declarado a la República
+          francesa. El contador de muertos y heridos fruto de los ajustes de
+          cuentas entre bandas no deja de subir en las últimas semanas.
+        </p>
+        <br>
+        <a
+          href="https://elpais.com/internacional/2024-11-01/un-ajuste-de-cuentas-entre-bandas-en-francia-deja-varios-heridos-y-un-menor-en-coma.html">
+          Click aquí para saber más</a>
+      </div>
+    </section>
+    <aside>
+      <div>
+        <img class="asideimg"
+          src="https://media.istockphoto.com/id/1598538209/vi/vec-to/banner-qu%E1%BA%A3ng-c%C3%A1o-ngang-c%E1%BB%A7a-c%E1%BB%ADa-h%C3%A0ng-b%C3%A1nh-k%E1%BA%B9o-b%C3%A1nh-quy-b%C3%A1nh-r%C3%A1n-thanh-s%C3%B4-c%C3%B4-la-th%E1%BB%B1c-t%E1%BA%BF.jpg?s=170667a&w=0&k=20&c=OdECLZBgwuEnmeqJTdLw_pn7TNImuRt3vqtqEpN8iIc="
+          alt="Anuncio">
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <h3>&copy; 2024 Noti~uwu - Powered by <a href="https://github.com/katyian" target="_blank"
+        rel="noreferrer noopener">Kat</h3>
+  </footer>
+  <script>
+    const fechaActual = new Date();
+    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+    function capitalizeFirstLetter(string) { return string.charAt(0).toUpperCase() + string.slice(1); }
+    fechaFormateada = capitalizeFirstLetter(fechaFormateada)
+    document.getElementById('fecha').textContent = fechaFormateada;
+  </script>
+</body>
+
+</html>

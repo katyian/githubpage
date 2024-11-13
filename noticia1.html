@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noti~uwu</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="shortcut icon" href="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="container-logo">
+        <div class="logo">
+          <a href="index.html"><img src="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png"
+              alt="Top Banner"></a>
+        </div>
+        <h1>Noti~uwu</h1>
+      </div>
+      <div id="fecha" class="fecha"></div>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="contenedor-flex">
+      <div class="cajagrande">
+        <h2>
+          <strong>Hombre de 53 años, asesinado por una joven de 26 años</strong>
+        </h2>
+        <br>
+        <img class="imagen1" src="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Noticia1.jpg"
+          alt="Cristina Rodriguéz Veloso, presunta asesina, siendo arrestada">
+        <br>
+        <p>El 9 de agosto de 2021, Cristina Rodríguez Veloso, que entonces tenía 26 años, y José María Roldán Zapata, de
+          53, se intercambiaron sus teléfonos móviles para hablar por Whatsapp después de contactar semanas antes a
+          través de una web de citas.</p>
+        <p>Ella vivía en Rabiño, una aldea del municipio ourensano de Cortegada de apenas 200 vecinos, y hasta allí
+          viajó él desde Castelldefels (Barcelona) para ir a verla, pero tras convivir solo tres días la mujer le pidió
+          que se marchase. </p>
+        <p></p>
+        <br>
+        <a
+          href="https://elpais.com/espana/2024-10-23/la-asesina-silenciosa-de-una-aldea-gallega-que-quemo-y-troceo-a-su-ligue-de-internet-le-di-pastillas-y-lo-asfixie.html">Click
+          aquí para saber más</a>
+      </div>
+    </section>
+    <aside>
+      <div>
+        <img class="asideimg"
+          src="https://media.istockphoto.com/id/1598538209/vi/vec-to/banner-qu%E1%BA%A3ng-c%C3%A1o-ngang-c%E1%BB%A7a-c%E1%BB%ADa-h%C3%A0ng-b%C3%A1nh-k%E1%BA%B9o-b%C3%A1nh-quy-b%C3%A1nh-r%C3%A1n-thanh-s%C3%B4-c%C3%B4-la-th%E1%BB%B1c-t%E1%BA%BF.jpg?s=170667a&w=0&k=20&c=OdECLZBgwuEnmeqJTdLw_pn7TNImuRt3vqtqEpN8iIc="
+          alt="Anuncio">
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <h3>&copy; 2024 Noti~uwu - Powered by <a href="https://github.com/katyian" target="_blank"
+        rel="noreferrer noopener">Kat</h3>
+  </footer>
+  <script>
+    const fechaActual = new Date();
+    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+    function capitalizeFirstLetter(string) { return string.charAt(0).toUpperCase() + string.slice(1); }
+    fechaFormateada = capitalizeFirstLetter(fechaFormateada)
+    document.getElementById('fecha').textContent = fechaFormateada;
+  </script>
+</body>
+
+</html>

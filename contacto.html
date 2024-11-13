@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noti~uwu</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="contacto.css">
+  <link rel="shortcut icon" href="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="container-logo">
+        <div class="logo">
+          <a href="index.html"><img src="C:\Users\kater\OneDrive\Documentos\Visual Studio\Noticias\img\Logo.png"
+              alt="Top Banner"></a>
+        </div>
+        <h1>Noti~uwu</h1>
+      </div>
+      <div id="fecha" class="fecha"></div>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="contenedor-flex">
+      <div class="cajagrande">
+        <h2>
+          <strong>Contáctanos</strong>
+        </h2>
+        <br>
+        <h3>Escríbenos y responderemos lo más rápido posible</h3>
+        <form id="contactForm">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit"><strong>Enviar</strong></button>
+        </form>
+        <br>
+        <p>Gracias por escribirnos, tu apoyo nos ayuda a mejorar.</p>
+      </div>
+      <div id="message"></div>
+      <script src="script.js"></script>
+      <img
+        src="https://imgs.search.brave.com/OnkAfAwkOfGrxMxdhb-9IQbE-0sObOZkdDwgMn88Fmc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9jYXQtaXMtY2hl/ZXJmdWxseS1zcGVh/a2luZy13aXRoLXRo/YW5rLXlvdS1zcGVl/Y2gtYnViYmxlXzEx/MTU1ODMtNDQxMjcu/anBnP3NlbXQ9YWlz/X2h5YnJpZA"
+        alt="gato dando gracias">
+    </section>
+    <aside>
+      <div>
+        <img class="asideimg"
+          src="https://media.istockphoto.com/id/1598538209/vi/vec-to/banner-qu%E1%BA%A3ng-c%C3%A1o-ngang-c%E1%BB%A7a-c%E1%BB%ADa-h%C3%A0ng-b%C3%A1nh-k%E1%BA%B9o-b%C3%A1nh-quy-b%C3%A1nh-r%C3%A1n-thanh-s%C3%B4-c%C3%B4-la-th%E1%BB%B1c-t%E1%BA%BF.jpg?s=170667a&w=0&k=20&c=OdECLZBgwuEnmeqJTdLw_pn7TNImuRt3vqtqEpN8iIc="
+          alt="Anuncio">
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <h3>&copy; 2024 Noti~uwu - Powered by <a href="https://github.com/katyian" target="_blank"
+        rel="noreferrer noopener">Kat</h3>
+  </footer>
+  <script>
+    const fechaActual = new Date();
+    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones);
+    function capitalizeFirstLetter(string) { return string.charAt(0).toUpperCase() + string.slice(1); }
+    fechaFormateada = capitalizeFirstLetter(fechaFormateada)
+    document.getElementById('fecha').textContent = fechaFormateada;
+  </script>
+</body>
+
+</html>
